@@ -1,6 +1,6 @@
 ---
-title: Giacenza Media Conto BBVA
-author: Francesco Ranellucci
+title: Giacenza Media Conto
+author: 
 date: \today
 abstract: |
   Script creato per avere una giacenza media semi automatica (da implementare) in quanto la banca in questione sembra non fornirla.
