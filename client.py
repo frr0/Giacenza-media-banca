@@ -25,7 +25,7 @@ def main():
   importi_csv = {}
   for riga in csv_reader:
     importo = riga["importo"]
-    importo = float(importo.replace(",",".")) #sostituisco la virgola col punto
+    importo = float(importo.replace(";",".")) #sostituisco la virgola col punto
     dataValutaDt = datetime.strptime(riga["data"], "%d/%m/%Y")
     timestampValuta = datetime.timestamp(dataValutaDt)
     importi_in_data = importi_csv.get(timestampValuta, 0)
