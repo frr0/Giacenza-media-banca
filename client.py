@@ -104,8 +104,10 @@ def main():
   # La giacenza media si calcola dividendo sempre per 365 anche se l'anno e bisestile
   giacenza_media = ("%.2f" % (numeri/365)).replace(".",",")
   saldo_fine_anno = ("%.2f" % saldo_fine_anno).replace(".",",")
-  print("# Giacenza media")
-  print("\nGIACENZA MEDIA %d: %s   \n SALDO AL 31/12/%d: %s" % (anno, giacenza_media, anno, saldo_fine_anno))
+  print("# Giacenza media  ")
+  print("\nGIACENZA MEDIA %d: %s €   \n SALDO AL 31/12/%d: %s €" % (anno, giacenza_media, anno, saldo_fine_anno))
+  print()
+  print("# Movimenti  ")
 
   # Stampo i saldi da array
   #for importo in importi_ord_per_data:
