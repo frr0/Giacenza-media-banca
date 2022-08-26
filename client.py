@@ -18,7 +18,7 @@ from datetime import timedelta
 #
 def main():
   csv_file = open('movimenti.csv', mode='r')
-  csv_reader = csv.DictReader(csv_file, delimiter=';')
+  csv_reader = csv.DictReader(csv_file, delimiter=',')
 
   # Leggo il file csv e sommo i valori con le stesse date
   # chiave: timestamp, valore: somma importi della giornata
@@ -26,7 +26,7 @@ def main():
   for riga in csv_reader:
     importo = riga["importo"]
     importo = float(importo.replace(",",".")) #sostituisco la virgola col punto
-    dataValutaDt = datetime.strptime(riga["data valuta"], "%d/%m/%Y")
+    dataValutaDt = datetime.strptime(riga["data"], "%d/%m/%Y")
     timestampValuta = datetime.timestamp(dataValutaDt)
     importi_in_data = importi_csv.get(timestampValuta, 0)
     importi_in_data = importi_in_data + importo
@@ -104,7 +104,8 @@ def main():
   # La giacenza media si calcola dividendo sempre per 365 anche se l'anno e bisestile
   giacenza_media = ("%.2f" % (numeri/365)).replace(".",",")
   saldo_fine_anno = ("%.2f" % saldo_fine_anno).replace(".",",")
-  print("GIACENZA MEDIA %d: %s - SALDO AL 31/12/%d: %s" % (anno, giacenza_media, anno, saldo_fine_anno))
+  print("# Giacenza media")
+  print("\nGIACENZA MEDIA %d: %s   \n SALDO AL 31/12/%d: %s" % (anno, giacenza_media, anno, saldo_fine_anno))
 
   # Stampo i saldi da array
   #for importo in importi_ord_per_data:
