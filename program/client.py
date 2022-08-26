@@ -16,8 +16,9 @@ from datetime import timedelta
 # Le altre righe poi contengono i movimenti dell'anno fino al 31/12
 # (anche non ordinati cronologicamente)
 #
+
 def main():
-  csv_file = open('movimenti.csv', mode='r')
+  csv_file = open('./movimenti.csv', mode='r')
   csv_reader = csv.DictReader(csv_file, delimiter=',')
 
   # Leggo il file csv e sommo i valori con le stesse date
