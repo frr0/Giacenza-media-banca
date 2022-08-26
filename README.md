@@ -12,4 +12,4 @@ Per info: [https://github.com/frr0/Giacenza-media-banca](https://github.com/frr0
 Credits: [https://gist.github.com/nikiink/1003574fbed2daef673b9d0d88818fe6](https://gist.github.com/nikiink/1003574fbed2daef673b9d0d88818fe6)  
 
 
-[PDF finale](https://raw.githubusercontent.com/frr0/Giacenza-media-banca/master/Giacenza.pdf?token=GHSAT0AAAAAABP6SJJAWGVL63EFPO5WX46WYYI4R3Q)
+[PDF finale](https://raw.githubusercontent.com/frr0/Giacenza-media-banca/master/Giacenza.pdf?token=GHSAT0AAAAAABP6SJJBHOJKBUM7YZQNDAF2YYI4VSA)
